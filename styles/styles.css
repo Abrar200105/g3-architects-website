@@ -58,7 +58,7 @@ nav a {
 .banner-content {
     max-width: 862px;
     text-align: center;
-    margin: 50px auto;
+    margin: 100px auto 50px;
 }
 
 .banner_tittle {
@@ -69,9 +69,33 @@ nav a {
 
 .banner_des {
     color: #727272;
+    margin-bottom: 30px;
+}
+
+.banner img {
+    width: 100%;
 }
 
 
-img {
-    width: 100%;
+
+/* responsive media query */
+
+/* for mobile devices */
+@media screen and (max-width: 576px) {
+    header {
+        padding: 20px;
+    }
+    nav {
+        flex-direction: column;
+    }
+}
+
+/* for tablet or medium devices */
+@media screen and (min-width:576px) and (max-width:992px) {
+    header {
+        padding: 40px;
+    }
+    nav {
+        flex-direction: column;
+    }
 }
