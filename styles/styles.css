@@ -59,8 +59,6 @@ nav a {
 }
 
 
-
-
 /* banner styles */
 .banner-content {
     max-width: 862px;
@@ -81,6 +79,7 @@ nav a {
 }
 
 /* header section end*/
+
 
 
 /* main section */
@@ -224,6 +223,7 @@ nav a {
 
 /* some facts section end */
 
+
 /* sponsor section start */
 
 .sponsors {
@@ -246,6 +246,23 @@ nav a {
 }
 
 /* sponsor section end */
+
+
+/* footer section start */
+footer {
+    border-radius: 8px;
+    background: #FFF4E7;
+}
+
+footer>p {
+    padding: 40px 410px;
+    color: #424242;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* footer section end */
 
 
 
@@ -276,14 +293,18 @@ nav a {
     .quick_img {
         grid-template-columns: 1fr;
     }
-    .feature_img img{
+
+    .feature_img img {
         width: 100%;
     }
+
     .ten-years-badge {
         width: 72%;
         position: static;
     }
-
+    footer > p {
+        padding: 40px 0;
+    }
 
 }
 
@@ -307,8 +328,12 @@ nav a {
     .quick_img {
         grid-template-columns: 1fr;
     }
-    .feature_img img{
+
+    .feature_img img {
         width: 100%;
     }
-    
+    footer>p {
+        padding: 40px 130px;
+    }
+
 }
