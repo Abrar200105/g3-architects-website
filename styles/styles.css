@@ -126,6 +126,68 @@ nav a {
 /* quick list section end */
 
 
+/* features section start */
+.features {
+    margin: 0 15rem;
+    display: flex;
+    gap: 9rem;
+}
+
+.feature_content {
+    margin-top: 3rem;
+}
+
+.features .des_tittle {
+    border-left: 5px solid #FF900E;
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.cards {
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 2rem;
+    margin-bottom: 1.25rem;
+}
+
+.cards h4 {
+    color: #131313;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.ten-years-badge {
+    width: 342px;
+    border-radius: 8px;
+    background: #FF900E;
+    padding: 3.5rem 3rem;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+    right: 100px;
+}
+
+
+.ten-years-badge h2 {
+    color: #FFF;
+    text-align: center;
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 70px;
+}
+
+.ten-years-badge p {
+    color: #FFF;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+/* features section end */
+
+
 /* some facts section start */
 
 .facts {
@@ -133,7 +195,7 @@ nav a {
 }
 
 .card_container {
-    
+
     display: flex;
     gap: 1.25rem;
     justify-content: space-around;
@@ -146,37 +208,41 @@ nav a {
     padding: 45px 50px 60px;
 }
 
-.card > h4 {
-    color:  #424242;
+.card>h4 {
+    color: #424242;
     text-align: center;
     font-size: 2.8rem;
     font-weight: 600;
     margin: 10px auto 5px;
 }
-.card > p {
+
+.card>p {
     color: #727272;
-font-size: 1.25rem;
-font-weight: 600;
+    font-size: 1.25rem;
+    font-weight: 600;
 }
 
 /* some facts section end */
 
 /* sponsor section start */
 
-.sponsors{
+.sponsors {
     margin: 8rem 15rem;
 }
-.sponsor_des{
+
+.sponsor_des {
     text-align: center;
 }
-.spon_des{
+
+.spon_des {
     margin: 1.5rem auto 3rem;
 }
-.spon_img{
+
+.spon_img {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    gap : 20px;
+    gap: 20px;
 }
 
 /* sponsor section end */
@@ -192,20 +258,33 @@ font-weight: 600;
         padding: 20px;
     }
 
-    nav, .card_container, .spon_img {
+    nav,
+    .card_container,
+    .spon_img,
+    .features {
         flex-direction: column;
     }
 
-    .quick_list ,.facts, .sponsors{
+    .quick_list,
+    .facts,
+    .sponsors,
+    .features {
         flex-direction: column;
         margin: 85px 2.5rem 180px;
     }
-    
+
     .quick_img {
         grid-template-columns: 1fr;
     }
+    .feature_img img{
+        width: 100%;
+    }
+    .ten-years-badge {
+        width: 72%;
+        position: static;
+    }
 
-    
+
 }
 
 /* for tablet or medium devices */
@@ -218,7 +297,9 @@ font-weight: 600;
         flex-direction: column;
     }
 
-    .quick_list,.facts {
+    .quick_list,
+    .facts,
+    .features {
         flex-direction: column;
         margin: 85px 2.5rem 180px;
     }
@@ -226,4 +307,8 @@ font-weight: 600;
     .quick_img {
         grid-template-columns: 1fr;
     }
+    .feature_img img{
+        width: 100%;
+    }
+    
 }
