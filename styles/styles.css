@@ -161,7 +161,25 @@ font-weight: 600;
 
 /* some facts section end */
 
+/* sponsor section start */
 
+.sponsors{
+    margin: 8rem 15rem;
+}
+.sponsor_des{
+    text-align: center;
+}
+.spon_des{
+    margin: 1.5rem auto 3rem;
+}
+.spon_img{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap : 20px;
+}
+
+/* sponsor section end */
 
 
 
@@ -174,11 +192,11 @@ font-weight: 600;
         padding: 20px;
     }
 
-    nav, .card_container {
+    nav, .card_container, .spon_img {
         flex-direction: column;
     }
 
-    .quick_list ,.facts{
+    .quick_list ,.facts, .sponsors{
         flex-direction: column;
         margin: 85px 2.5rem 180px;
     }
